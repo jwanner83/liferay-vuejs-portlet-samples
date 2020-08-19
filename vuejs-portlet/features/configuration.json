@@ -1,0 +1,25 @@
+{
+	"$schema": "https://raw.githubusercontent.com/liferay/liferay-js-toolkit/master/resources/schemas/configuration.schema.json",
+	"system": {
+		"category": "vuejs-portlet",
+		"name": "vuejs-portlet",
+		"fields": {
+			"parentTitle": {
+				"type": "string",
+				"name": "parent-title",
+				"description": "parent-title-help",
+				"default": "Parent Title Default"
+			}
+		}
+	},
+	"portletInstance": {
+		"fields": {
+			"childTitle": {
+				"type": "string",
+				"name": "child-title",
+				"description": "child-title-help",
+				"default": "Child Title Default"
+			}
+		}
+	}
+}

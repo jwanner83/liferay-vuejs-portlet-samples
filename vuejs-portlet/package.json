@@ -1,0 +1,39 @@
+{
+	"name": "vuejs-portlet",
+	"version": "1.0.0",
+	"description": "Vuejs Portlet",
+	"devDependencies": {
+		"liferay-npm-bundler": "^2.18.8",
+		"liferay-npm-build-support": "^2.18.5",
+		"copy-webpack-plugin": "4.6.0",
+		"webpack": "4.29.6",
+		"webpack-cli": "3.3.0",
+		"webpack-dev-server": "3.2.1",
+		"babel-loader": "7.1.5",
+		"vue-style-loader": "^4.1.2",
+		"sass-loader": "^9.0.3",
+		"sass": "^1.26.10",
+		"@babel/preset-env": "^7.11.0",
+		"@babel/core": "^7.11.1",
+		"@babel/cli": "^7.10.5",
+		"@vue/cli-service": "^4.5.4",
+		"vue-template-compiler": "^2.6.11"
+	},
+	"dependencies": {
+		"vue": "2.6.11"
+	},
+	"scripts": {
+		"build": "babel --source-maps -d build src && vue-cli-service build --dest build/ --formats commonjs --target lib --name index ./src/index.js && npm run copy-assets && liferay-npm-bundler",
+		"copy-assets": "lnbs-copy-assets",
+		"deploy": "npm run build && lnbs-deploy",
+		"start": "lnbs-start"
+	},
+	"portlet": {
+		"com.liferay.portlet.display-category": "category.sample",
+		"com.liferay.portlet.instanceable": true,
+		"javax.portlet.name": "vuejsportlet",
+		"javax.portlet.security-role-ref": "power-user,user",
+		"javax.portlet.resource-bundle": "content.Language"
+	},
+	"main": "index.common"
+}
