@@ -8,5 +8,6 @@
 			"configuration": "features/configuration.json"
 		}
 	},
-	"dump-report": false
+	"dump-report": false,
+	"no-tracking": true
 }

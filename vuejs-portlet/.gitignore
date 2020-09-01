@@ -1,4 +1,4 @@
-build/*
+build-d/*
 dist/*
 node_modules/*
 liferay-npm-bundler-report.html

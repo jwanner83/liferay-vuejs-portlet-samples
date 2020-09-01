@@ -23,7 +23,7 @@
 		"vue": "2.6.11"
 	},
 	"scripts": {
-		"build": "babel --source-maps -d build src && vue-cli-service build --dest build/ --formats commonjs --target lib --name index ./src/index.js && npm run copy-assets && liferay-npm-bundler",
+		"build": "babel --source-maps -d build src && vue-cli-service build --dest build/ --formats commonjs --target lib --name index ./src/index.js && npm run copy-assets",
 		"copy-assets": "lnbs-copy-assets",
 		"deploy": "npm run build && lnbs-deploy",
 		"start": "lnbs-start"
