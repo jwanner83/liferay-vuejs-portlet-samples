@@ -14,8 +14,11 @@
   }
 </script>
 
-<style>
-.wrapper-child {
-  background-color: red;
+<style lang="scss">
+.wrapper {
+  &-child {
+    background-color: red;
+    margin-bottom: 0;
+  }
 }
 </style>

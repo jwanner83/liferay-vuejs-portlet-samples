@@ -10,7 +10,6 @@
 		"webpack-cli": "3.3.0",
 		"webpack-dev-server": "3.2.1",
 		"babel-loader": "7.1.5",
-		"vue-style-loader": "^4.1.2",
 		"sass-loader": "^9.0.3",
 		"sass": "^1.26.10",
 		"@babel/preset-env": "^7.11.0",
@@ -29,10 +28,10 @@
 		"start": "lnbs-start"
 	},
 	"portlet": {
-		"com.liferay.portlet.header-portlet-css": "/css/styles.css",
+		"com.liferay.portlet.header-portlet-css": "/index.css",
 		"com.liferay.portlet.display-category": "category.sample",
 		"com.liferay.portlet.instanceable": true,
-		"javax.portlet.name": "vuejsportlet",
+		"javax.portlet.name": "vuejs-portlet",
 		"javax.portlet.security-role-ref": "power-user,user",
 		"javax.portlet.resource-bundle": "content.Language"
 	},
