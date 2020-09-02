@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <i>Version: <b>34</b></i>
+    <i>Version: <b>48</b></i>
     <h1 class="wrapper-parent">Parent Title Configuration: {{ configuration.system.parentTitle }}</h1>
     <child :title="configuration.portletInstance.childTitle" />
   </div>
@@ -21,3 +21,9 @@
     }
   }
 </script>
+
+<style>
+.wrapper {
+  background-color: black;
+}
+</style>

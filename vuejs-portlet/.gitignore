@@ -1,5 +1,6 @@
-build-d/*
-dist/*
-node_modules/*
+build/
+dist/
+node_modules/
 liferay-npm-bundler-report.html
-.webpack/*
+.webpack/
+.idea/

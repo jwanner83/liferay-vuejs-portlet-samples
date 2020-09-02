@@ -13,3 +13,9 @@
     }
   }
 </script>
+
+<style>
+.wrapper-child {
+  background-color: red;
+}
+</style>
