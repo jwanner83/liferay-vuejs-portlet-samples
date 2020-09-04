@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <i>Version: <b>58</b></i>
+    <i class="wrapper-version">Version: <b>61</b></i>
     <h1 class="wrapper-parent">Parent Title Configuration: {{ configuration.system.parentTitle }}</h1>
     <child :title="configuration.portletInstance.childTitle" />
   </div>
@@ -25,6 +25,8 @@
 
 <style lang="scss">
 .wrapper {
-  background-color: black;
+  &-version {
+    background-color: green;
+  }
 }
 </style>

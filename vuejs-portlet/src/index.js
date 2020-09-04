@@ -1,6 +1,7 @@
 import Vue from 'vue/dist/vue.common'
 import App from './components/index.vue'
-import './css/index.scss'
+
+import './css/styles.scss'
 
 export default function main({portletNamespace, contextPath, portletElementId, configuration}) {
 	new Vue({
