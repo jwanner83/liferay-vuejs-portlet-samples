@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'viewx',
+  name: 'scene',
   computed: {
     count () {
       return this.$store.state.count
