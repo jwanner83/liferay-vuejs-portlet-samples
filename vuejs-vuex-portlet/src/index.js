@@ -1,6 +1,8 @@
 import Vue from 'vue/dist/vue.common'
 import App from './components/index'
 
+import { store } from './store/index'
+
 import './style/styles.scss'
 
 /**
@@ -14,9 +16,11 @@ import './style/styles.scss'
  * @param portletElementId
  * @param configuration
  */
+
 export default function main({portletNamespace, contextPath, portletElementId, configuration}) {
 	new Vue({
 		el: `#${portletElementId}`,
+		store: store,
 		data: {
 			portletNamespace, contextPath, portletElementId, configuration
 		},
