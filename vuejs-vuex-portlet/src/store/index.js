@@ -3,12 +3,15 @@ import Vuex from 'vuex/dist/vuex.common'
 
 Vue.use(Vuex)
 
-export const store = new Vuex.Store({
-    state: {
-        count: 0
-    },
-    mutations: {
-        increment: state => state.count++,
-        decrement: state => state.count--
-    }
-})
+export const getStore = (stateExtender = {}) => {
+    return new Vuex.Store({
+        state: {
+            count: 0,
+            ...stateExtender
+        },
+        mutations: {
+            increment: state => state.count++,
+            decrement: state => state.count--
+        }
+    })
+}

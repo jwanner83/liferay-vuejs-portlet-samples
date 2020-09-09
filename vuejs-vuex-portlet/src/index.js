@@ -1,7 +1,7 @@
 import Vue from 'vue/dist/vue.common'
 import App from './components/index'
 
-import { store } from './store/index'
+import { getStore } from './store/index'
 
 import './style/styles.scss'
 
@@ -20,17 +20,10 @@ import './style/styles.scss'
 export default function main({portletNamespace, contextPath, portletElementId, configuration}) {
 	new Vue({
 		el: `#${portletElementId}`,
-		store: store,
-		data: {
-			portletNamespace, contextPath, portletElementId, configuration
-		},
-		components: {
-			App
-		},
-		render: h => h(App, {
-			props: {
-				configuration
-			}
-		})
+		store: getStore({
+			configuration
+		}),
+		components: { App },
+		render: h => h(App, {})
 	})
 }

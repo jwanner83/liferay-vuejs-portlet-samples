@@ -1,38 +1,27 @@
 <template>
   <div class="wrapper">
-    <i class="wrapper-version">Version: <b>20</b></i>
-    <i class="wrapper-version">Count: <b>{{ count }}</b></i>
-    <h1 class="wrapper-parent">Parent Title Configuration: {{ configuration.system.parentTitle }}</h1>
-    <child :title="configuration.portletInstance.childTitle" />
+    <h1 class="wrapper-title">Vuejs Vuex Portlet</h1>
+    <vuex />
+    <configuration />
   </div>
 </template>
 
 <script>
-  import Child from './Child'
+  import Vuex from './vuex/index';
+  import Configuration from './configuration/index';
 
   export default {
     name: 'Parent',
     components: {
-      Child
-    },
-    props: {
-      configuration: {
-        type: Object,
-        default: () => {}
-      }
-    },
-    computed: {
-      count () {
-        return this.$store.state.count
-      }
+      Configuration,
+      Vuex
     }
   }
 </script>
 
 <style lang="scss">
-.wrapper {
-  &-version {
-    background-color: green;
-  }
+.wrapper-title {
+  margin-bottom: 20px;
+  color: white;
 }
 </style>
