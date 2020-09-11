@@ -13,9 +13,6 @@ export default {
       type: Object,
       default: () => {}
     }
-  },
-  created () {
-    console.log('configuration', this.configuration)
   }
 }
 </script>
