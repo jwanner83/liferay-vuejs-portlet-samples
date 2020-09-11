@@ -1,18 +1,17 @@
 <template>
   <div class="wrapper">
-    <i class="wrapper-version">Version: <b>61</b></i>
-    <h1 class="wrapper-parent">Parent Title Configuration: {{ configuration.system.parentTitle }}</h1>
-    <child :title="configuration.portletInstance.childTitle" />
+    <h1 class="wrapper-title">Vuejs Portlet</h1>
+    <configuration :configuration="configuration" />
   </div>
 </template>
 
 <script>
-  import Child from './Child'
+  import Configuration from "./configuration/index";
 
   export default {
     name: 'Parent',
     components: {
-      Child
+      Configuration
     },
     props: {
       configuration: {
@@ -23,10 +22,9 @@
   }
 </script>
 
-<style lang="scss">
-.wrapper {
-  &-version {
-    background-color: green;
-  }
+<style lang="scss" scoped>
+.wrapper-title {
+  margin-bottom: 20px;
+  color: white;
 }
 </style>

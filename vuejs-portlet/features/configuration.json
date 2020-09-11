@@ -4,21 +4,21 @@
 		"category": "vuejs-portlet",
 		"name": "vuejs-portlet",
 		"fields": {
-			"parentTitle": {
+			"title": {
 				"type": "string",
-				"name": "parent-title",
-				"description": "parent-title-help",
-				"default": "Parent Title Default"
+				"name": "title",
+				"description": "title-help",
+				"default": "System Title Default"
 			}
 		}
 	},
 	"portletInstance": {
 		"fields": {
-			"childTitle": {
+			"title": {
 				"type": "string",
-				"name": "child-title",
-				"description": "child-title-help",
-				"default": "Child Title Default"
+				"name": "title",
+				"description": "title-help",
+				"default": "Instance Title Default"
 			}
 		}
 	}

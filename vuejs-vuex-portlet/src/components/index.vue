@@ -19,7 +19,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .wrapper-title {
   margin-bottom: 20px;
   color: white;

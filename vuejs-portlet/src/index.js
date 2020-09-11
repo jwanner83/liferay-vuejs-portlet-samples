@@ -17,9 +17,6 @@ import './style/styles.scss'
 export default function main({portletNamespace, contextPath, portletElementId, configuration}) {
 	new Vue({
 		el: `#${portletElementId}`,
-		data: {
-			portletNamespace, contextPath, portletElementId, configuration
-		},
 		components: {
 			App
 		},
