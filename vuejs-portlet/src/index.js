@@ -1,8 +1,6 @@
 import Vue from 'vue/dist/vue.common'
 import App from './components/index'
 
-import HelperMixin from './mixin'
-
 import './style/styles.scss'
 
 /**
@@ -17,17 +15,14 @@ import './style/styles.scss'
  * @param configuration
  */
 export default function main ({ portletNamespace, contextPath, portletElementId, configuration }) {
-  const helperData = new Map()
-  helperData.set('portletNamespace', portletNamespace)
-  helperData.set('contextPath', contextPath)
-  helperData.set('portletElementId', portletElementId)
-  helperData.set('configuration', configuration)
-
-  // helper mixin for runtime variables
-  Vue.mixin(new HelperMixin(helperData).getMixin())
-
   new Vue({
     el: `#${portletElementId}`,
+    data: {
+      portletNamespace,
+      contextPath,
+      portletElementId,
+      configuration
+    },
     components: {
       App
     },

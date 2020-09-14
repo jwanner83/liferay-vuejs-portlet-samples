@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper-configuration-view">
-    <p class="wrapper-configuration-view-system">System: {{ configuration.system.title }}</p>
-    <p class="wrapper-configuration-view-instance">Instance: {{ configuration.portletInstance.title }}</p>
+    <p class="wrapper-configuration-view-system">System: {{ $root.$data.configuration.system.title }}</p>
+    <p class="wrapper-configuration-view-instance">Instance: {{ $root.$data.configuration.portletInstance.title }}</p>
   </div>
 </template>
 

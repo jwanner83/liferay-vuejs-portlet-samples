@@ -22,8 +22,6 @@
 		"vue-template-compiler": "^2.6.12",
 		"eslint": "^7.9.0",
 		"eslint-plugin-import": "^2.22.0",
-		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-promise": "^4.2.1",
 		"eslint-plugin-standard": "^4.0.1",
 		"eslint-plugin-vue": "^6.2.2",
 		"babel-eslint": "^10.1.0"
@@ -33,8 +31,7 @@
 		"@clavis/lfr-js-portlet-utils": "^1.1.0"
 	},
 	"scripts": {
-		"build": "babel --source-maps -d build src && vue-cli-service build --dest build/ --formats commonjs --target lib --name index ./src/index.js && npm run copy-assets && liferay-npm-bundler",
-		"copy-assets": "lnbs-copy-assets",
+		"build": "babel --source-maps -d build src && vue-cli-service build --dest build/ --formats commonjs --target lib --name index ./src/index.js && lnbs-copy-assets && liferay-npm-bundler",
 		"deploy": "npm run build && lnbs-deploy",
 		"start": "lfr-js-start"
 	},
