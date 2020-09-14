@@ -7,13 +7,7 @@
 
 <script>
 export default {
-  name: 'scene',
-  props: {
-    configuration: {
-      type: Object,
-      default: () => {}
-    }
-  }
+  name: 'scene'
 }
 </script>
 

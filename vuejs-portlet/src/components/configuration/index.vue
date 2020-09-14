@@ -1,21 +1,16 @@
 <template>
   <div class="wrapper-configuration">
-    <scene :configuration="configuration" />
+    <scene />
   </div>
 </template>
 
 <script>
-import Scene from './scene';
+import Scene from './scene'
+
 export default {
   name: 'configuration',
   components: {
     Scene
-  },
-  props: {
-    configuration: {
-      type: Object,
-      default: () => {}
-    }
   }
 }
 </script>

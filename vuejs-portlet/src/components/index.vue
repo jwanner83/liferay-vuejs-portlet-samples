@@ -1,25 +1,19 @@
 <template>
   <div class="wrapper">
     <h1 class="wrapper-title">Vuejs Portlet</h1>
-    <configuration :configuration="configuration" />
+    <configuration />
   </div>
 </template>
 
 <script>
-  import Configuration from "./configuration/index";
+import Configuration from './configuration/index'
 
-  export default {
-    name: 'Parent',
-    components: {
-      Configuration
-    },
-    props: {
-      configuration: {
-        type: Object,
-        default: () => {}
-      }
-    }
+export default {
+  name: 'Parent',
+  components: {
+    Configuration
   }
+}
 </script>
 
 <style lang="scss" scoped>
