@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <h1 class="wrapper-title">Vuejs Vuex 1 Portlet</h1>
+    <h1 class="wrapper-title">Vuejs Vuex Portlet</h1>
     <vuex />
     <configuration />
   </div>
