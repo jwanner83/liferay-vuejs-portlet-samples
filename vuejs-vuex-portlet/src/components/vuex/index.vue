@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Scene from './scene';
-import Action from './action';
+import Scene from './scene'
+import Action from './action'
 export default {
   name: 'vuex',
   components: {

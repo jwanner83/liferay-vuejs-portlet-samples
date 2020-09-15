@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Scene from './scene';
+import Scene from './scene'
 export default {
   name: 'configuration',
   components: {

@@ -9,24 +9,34 @@
 		"webpack": "4.29.6",
 		"webpack-cli": "3.3.0",
 		"webpack-dev-server": "3.2.1",
-		"babel-loader": "7.1.5",
+		"babel-loader": "08.1.0",
 		"sass-loader": "^9.0.3",
 		"sass": "^1.26.10",
 		"@babel/preset-env": "^7.11.0",
 		"@babel/core": "^7.11.1",
 		"@babel/cli": "^7.10.5",
+		"@babel/plugin-syntax-class-properties": "^7.10.4",
+		"@babel/plugin-proposal-class-properties": "^7.10.4",
 		"@vue/cli-service": "^4.5.4",
-		"vue-template-compiler": "^2.6.12"
+		"@vue/eslint-config-standard": "^5.1.2",
+		"vue-template-compiler": "^2.6.12",
+		"eslint": "^7.9.0",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-standard": "^4.0.1",
+		"eslint-plugin-vue": "^6.2.2",
+		"babel-eslint": "^10.1.0"
 	},
 	"dependencies": {
 		"vue": "^2.6.12",
-		"vuex": "^3.5.1"
+		"vuex": "^3.5.1",
+		"@clavis/lfr-js-portlet-utils": "^1.1.0"
 	},
 	"scripts": {
-		"build": "babel --source-maps -d build src && vue-cli-service build --dest build/ --formats commonjs --target lib --name index ./src/index.js && npm run copy-assets && liferay-npm-bundler",
-		"copy-assets": "lnbs-copy-assets",
+		"build": "babel --source-maps -d build src && vue-cli-service build --dest build/ --formats commonjs --target lib --name index ./src/index.js && lnbs-copy-assets && liferay-npm-bundler",
 		"deploy": "npm run build && lnbs-deploy",
-		"start": "lnbs-start"
+		"start": "lfr-js-start"
 	},
 	"portlet": {
 		"com.liferay.portlet.header-portlet-css": "/index.css",

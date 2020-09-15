@@ -9,10 +9,10 @@
 export default {
   name: 'action',
   methods: {
-    increment() {
+    increment () {
       this.$store.commit('increment')
     },
-    decrement() {
+    decrement () {
       this.$store.commit('decrement')
     }
   }
