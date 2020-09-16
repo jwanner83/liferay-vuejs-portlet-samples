@@ -32,3 +32,8 @@ npm run build
 ```shell script
 npm run deploy
 ```
+
+### Run ESLint over all files
+```shell script
+npm run lint
+```
