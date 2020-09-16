@@ -26,12 +26,12 @@
 		"eslint-plugin-promise": "^4.2.1",
 		"eslint-plugin-standard": "^4.0.1",
 		"eslint-plugin-vue": "^6.2.2",
-		"babel-eslint": "^10.1.0"
+		"babel-eslint": "^10.1.0",
+		"@clavis/lfr-js-portlet-utils": "^1.1.0"
 	},
 	"dependencies": {
 		"vue": "^2.6.12",
-		"vuex": "^3.5.1",
-		"@clavis/lfr-js-portlet-utils": "^1.1.0"
+		"vuex": "^3.5.1"
 	},
 	"scripts": {
 		"build": "babel --source-maps -d build src && vue-cli-service build --dest build/ --formats commonjs --target lib --name index ./src/index.js && lnbs-copy-assets && liferay-npm-bundler",
