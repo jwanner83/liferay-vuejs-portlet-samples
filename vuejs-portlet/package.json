@@ -36,7 +36,7 @@
 		"build": "npm run lint && babel --source-maps -d build src && vue-cli-service build --dest build/ --formats commonjs --target lib --name index ./src/index.js && lnbs-copy-assets && liferay-npm-bundler",
 		"deploy": "npm run build && lnbs-deploy",
 		"start": "lfr-js-start",
-		"lint": "./node_modules/.bin/eslint 'src/**' --ignore-pattern '*.scss'"
+		"lint": "eslint 'src/**' --ignore-pattern '*.scss'"
 	},
 	"portlet": {
 		"com.liferay.portlet.header-portlet-css": "/index.css",
