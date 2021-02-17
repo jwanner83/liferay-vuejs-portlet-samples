@@ -5,13 +5,11 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'scene',
-  computed: {
-    count () {
-      return this.$store.state.count
-    }
-  }
+  computed: mapState(['count'])
 }
 </script>
 

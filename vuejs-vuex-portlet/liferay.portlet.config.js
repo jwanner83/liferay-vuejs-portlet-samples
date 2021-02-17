@@ -1,7 +1,7 @@
 // see https://github.com/faragos/lfr-js-portlet-utils#config for all options
 module.exports = {
-  host: 'example.com',
+  host: 'jwa-d-vm01.clavisnet.com',
   originPort: 80,
-  user: 'test@liferay.com',
-  password: 'test'
+  user: 'playground@liferay.ch',
+  password: 'Reeverde14'
 }
