@@ -35,5 +35,3 @@ export default function main ({ portletNamespace, contextPath, portletElementId,
     render: h => h(App)
   })
 }
-// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-// @ts-ignore

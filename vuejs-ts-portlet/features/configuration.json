@@ -1,8 +1,8 @@
 {
 	"$schema": "https://raw.githubusercontent.com/liferay/liferay-js-toolkit/master/resources/schemas/configuration.schema.json",
 	"system": {
-		"category": "vuejs-portlet",
-		"name": "vuejs-portlet",
+		"category": "vuejs-typescript-portlet",
+		"name": "vuejs-typescript-portlet",
 		"fields": {
 			"title": {
 				"type": "string",
