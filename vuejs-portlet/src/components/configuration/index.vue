@@ -1,11 +1,11 @@
 <template>
-  <div class="wrapper-configuration">
+  <div class="configuration__wrapper">
     <scene />
   </div>
 </template>
 
 <script>
-import Scene from './scene'
+import Scene from './scene.vue'
 
 export default {
   name: 'configuration',
@@ -14,10 +14,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.wrapper-configuration {
-  background-color: white;
-  padding: 20px;
-}
-</style>

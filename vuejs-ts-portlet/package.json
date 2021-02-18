@@ -1,7 +1,7 @@
 {
 	"name": "vuejs-ts-portlet",
 	"version": "1.0.0",
-	"description": "Vuejs TypeScript Portlet",
+	"description": "Vuej.s TypeScript Portlet",
 	"devDependencies": {
 		"liferay-npm-bundler": "^2.18.8",
 		"liferay-npm-build-support": "^2.18.5",
