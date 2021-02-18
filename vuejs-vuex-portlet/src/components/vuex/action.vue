@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper-vuex-action">
+  <div class="vuex-action">
     <button class="btn btn-primary" @click="increment">Increment</button>
     <button class="btn btn-primary" @click="decrement">Decrement</button>
   </div>
@@ -11,10 +11,6 @@ import { mapMutations } from 'vuex'
 export default {
   name: 'action',
   methods: {
-    hans () {
-      console.log('markus')
-      return 'sdf'
-    },
     ...mapMutations([
       'increment',
       'decrement'
@@ -23,8 +19,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.wrapper-vuex-action {
+<style scoped lang="scss">
+.vuex-action {
   margin-top: 10px;
 
   .btn + .btn {
