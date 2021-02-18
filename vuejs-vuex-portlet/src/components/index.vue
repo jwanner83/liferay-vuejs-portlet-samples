@@ -1,27 +1,34 @@
 <template>
-  <div class="wrapper">
-    <h1 class="wrapper-title">Vuejs Vuex Portlet</h1>
-    <vuex />
-    <configuration />
+  <div class="portlet__wrapper container-fluid-1280 main-content-body">
+    <div class="portlet sheet">
+      <h1 class="portlet__title">Vue.js Vuex Portlet</h1>
+      <p class="portlet__version">Version: {{ version }}</p>
+      <vuex />
+      <configuration />
+    </div>
   </div>
 </template>
 
 <script>
-import Vuex from './vuex/index'
-import Configuration from './configuration/index'
+import Configuration from './configuration/index.vue'
+import Vuex from './vuex'
 
 export default {
   name: 'Parent',
   components: {
-    Configuration,
-    Vuex
+    Vuex,
+    Configuration
+  },
+  computed: {
+    version () {
+      return '1.1.0'
+    }
   }
 }
 </script>
 
-<style lang="scss" scoped>
-.wrapper-title {
+<style scoped lang="scss">
+.portlet {
   margin-bottom: 20px;
-  color: white;
 }
 </style>

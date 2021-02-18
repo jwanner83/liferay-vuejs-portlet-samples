@@ -1,7 +1,7 @@
 {
 	"name": "vuejs-vuex-portlet",
-	"version": "1.0.0",
-	"description": "Vuejs Vuex Portlet",
+	"version": "1.1.0",
+	"description": "Vue.js Vuex Portlet",
 	"devDependencies": {
 		"liferay-npm-bundler": "^2.18.8",
 		"liferay-npm-build-support": "^2.18.5",
@@ -12,13 +12,13 @@
 		"babel-loader": "08.1.0",
 		"sass-loader": "^9.0.3",
 		"sass": "^1.26.10",
-		"@babel/preset-env": "^7.11.0",
 		"@babel/core": "^7.11.1",
 		"@babel/cli": "^7.10.5",
 		"@babel/plugin-syntax-class-properties": "^7.10.4",
 		"@babel/plugin-proposal-class-properties": "^7.10.4",
 		"@vue/cli-service": "^4.5.4",
 		"@vue/eslint-config-standard": "^5.1.2",
+		"@vue/cli-plugin-babel": "^4.5.11",
 		"vue-template-compiler": "^2.6.12",
 		"eslint": "^7.9.0",
 		"eslint-plugin-import": "^2.22.0",
@@ -30,7 +30,6 @@
 		"@clavis/lfr-js-portlet-utils": "^1.1.0"
 	},
 	"dependencies": {
-		"generator-liferay-js": "^2.20.0",
 		"vue": "^2.6.12",
 		"vuex": "^3.5.1"
 	},
