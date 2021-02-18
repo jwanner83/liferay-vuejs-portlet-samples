@@ -1,6 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-// @ts-ignore
-import Vue from 'vue/dist/vue.common'
+import Vue from 'vue'
 import App from './components/index.vue'
 
 import './style/styles.scss'
@@ -16,9 +14,7 @@ import './style/styles.scss'
  * @param portletElementId
  * @param configuration
  */
-// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-// @ts-ignore
-export default function main ({ portletNamespace, contextPath, portletElementId, configuration }) {
+export default function main ({ portletNamespace, contextPath, portletElementId, configuration }: any) {
   new Vue({
     el: `#${portletElementId}`,
     data: {
@@ -30,8 +26,8 @@ export default function main ({ portletNamespace, contextPath, portletElementId,
     components: {
       App
     },
-    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-    // @ts-ignore
-    render: h => h(App)
+    render: (h: any) => {
+      return h(App)
+    }
   })
 }
