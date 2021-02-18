@@ -1,0 +1,1 @@
+If the folder is empty, the lnbs-copy-assets command fails. If a file is added to the assets folder, it can be removed.
