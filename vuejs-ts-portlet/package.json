@@ -1,0 +1,59 @@
+{
+	"name": "vuejs-ts-portlet",
+	"version": "1.0.0",
+	"description": "Vuejs TypeScript Portlet",
+	"devDependencies": {
+		"liferay-npm-bundler": "^2.18.8",
+		"liferay-npm-build-support": "^2.18.5",
+		"copy-webpack-plugin": "4.6.0",
+		"webpack": "4.29.6",
+		"webpack-cli": "3.3.0",
+		"webpack-dev-server": "3.2.1",
+		"babel-loader": "08.1.0",
+		"sass": "^1.26.10",
+		"@babel/preset-env": "^7.11.0",
+		"@babel/core": "^7.11.1",
+		"@babel/cli": "^7.10.5",
+		"@babel/plugin-syntax-class-properties": "^7.10.4",
+		"@babel/plugin-proposal-class-properties": "^7.10.4",
+		"babel-eslint": "^10.1.0",
+		"@clavis/lfr-js-portlet-utils": "^1.1.0",
+		"@typescript-eslint/eslint-plugin": "^2.33.0",
+		"@typescript-eslint/parser": "^2.33.0",
+		"@vue/cli-plugin-babel": "~4.5.0",
+		"@vue/cli-plugin-eslint": "~4.5.0",
+		"@vue/cli-plugin-typescript": "~4.5.0",
+		"@vue/cli-service": "~4.5.0",
+		"@vue/eslint-config-standard": "^5.1.2",
+		"@vue/eslint-config-typescript": "^5.0.2",
+		"eslint": "^6.7.2",
+		"eslint-plugin-import": "^2.20.2",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-standard": "^4.0.0",
+		"eslint-plugin-vue": "^6.2.2",
+		"node-sass": "^4.12.0",
+		"sass-loader": "^8.0.2",
+		"typescript": "~3.9.3",
+		"vue-template-compiler": "^2.6.11"
+	},
+	"dependencies": {
+		"vue": "^2.6.12",
+		"core-js": "^3.6.5"
+	},
+	"scripts": {
+		"build": "npm run lint && babel --source-maps -d build src && vue-cli-service build --dest build/ --formats commonjs --target lib --name index ./src/index.js && lnbs-copy-assets && liferay-npm-bundler",
+		"deploy": "npm run build && lnbs-deploy",
+		"start": "lfr-js-start",
+		"lint": "eslint 'src/**' --ignore-pattern '*.scss'"
+	},
+	"portlet": {
+		"com.liferay.portlet.header-portlet-css": "/index.css",
+		"com.liferay.portlet.display-category": "category.sample",
+		"com.liferay.portlet.instanceable": true,
+		"javax.portlet.name": "vuejs-ts-portlet",
+		"javax.portlet.security-role-ref": "power-user,user",
+		"javax.portlet.resource-bundle": "content.Language"
+	},
+	"main": "index.common"
+}
