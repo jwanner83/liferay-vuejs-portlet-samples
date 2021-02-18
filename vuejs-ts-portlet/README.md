@@ -1,5 +1,5 @@
 # Vue.js TypeScript Portlet
-Plain Vue.js Portlet sample for Liferay >= 7.2 with configuration and localization support. 
+Plain Vue.js Portlet sample with TypeScript support for Liferay >= 7.2 with configuration and localization support. 
 
 ## Project setup
 ### Install all dependencies

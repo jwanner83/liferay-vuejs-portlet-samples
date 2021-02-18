@@ -34,4 +34,12 @@ Have a look in the portlet specific README.md files to see, what you have to do 
             Plain Vue.js Portlet sample with Vuex support for Liferay >= 7.2 with configuration and localization support. 
         </td>
     </tr>
+    <tr>
+        <td>
+            Vue.js TypeScript Portlet
+        </td>
+        <td>
+            Plain Vue.js Portlet sample with TypeScript support for Liferay >= 7.2 with configuration and localization support.
+        </td>
+    </tr>
 </table>
