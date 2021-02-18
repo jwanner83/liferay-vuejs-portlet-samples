@@ -3,5 +3,8 @@ module.exports = {
   host: 'example.com',
   originPort: 80,
   user: 'test@liferay.com',
-  password: 'test'
+  password: 'test',
+  sources: {
+    js: '/src/index.ts'
+  }
 }

@@ -45,6 +45,7 @@
 		"build": "npm run lint && babel --source-maps -d build src && vue-cli-service build --dest build/ --formats commonjs --target lib --name index ./src/index.ts && lnbs-copy-assets && liferay-npm-bundler",
 		"deploy": "npm run build && lnbs-deploy",
 		"start": "lfr-js-start",
+		"stop": "kill $(ps aux | grep 'lfr-js-start' | awk '{print $2}')",
 		"lint": "eslint 'src/**' --ignore-pattern '*.scss'"
 	},
 	"portlet": {
