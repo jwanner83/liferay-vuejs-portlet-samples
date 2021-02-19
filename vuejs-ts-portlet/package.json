@@ -17,7 +17,7 @@
 		"@babel/plugin-syntax-class-properties": "^7.10.4",
 		"@babel/plugin-proposal-class-properties": "^7.10.4",
 		"babel-eslint": "^10.1.0",
-		"@clavis/lfr-js-portlet-utils": "^1.1.0",
+		"@clavis/lfr-js-portlet-utils": "^1.2.0",
 		"@typescript-eslint/eslint-plugin": "^2.33.0",
 		"@typescript-eslint/parser": "^2.33.0",
 		"@vue/cli-plugin-babel": "~4.5.0",
