@@ -1,8 +1,8 @@
 {
 	"$schema": "https://raw.githubusercontent.com/liferay/liferay-js-toolkit/master/resources/schemas/configuration.schema.json",
 	"system": {
-		"category": "vuejs-portlet",
-		"name": "vuejs-portlet",
+		"category": "jspdf-portlet",
+		"name": "jspdf-portlet",
 		"fields": {
 			"title": {
 				"type": "string",
