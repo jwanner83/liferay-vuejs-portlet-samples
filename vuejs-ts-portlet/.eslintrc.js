@@ -3,13 +3,13 @@ module.exports = {
   env: {
     node: true
   },
-  extends: [
+  'extends': [
     'plugin:vue/essential',
     '@vue/standard',
     '@vue/typescript/recommended'
   ],
   parserOptions: {
-    parser: 'babel-eslint'
+    ecmaVersion: 2020
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
@@ -27,6 +27,9 @@ module.exports = {
       alignAttributesVertically: true
     }],
     'no-new': 0,
-    'semicolon': 0
+    '@typescript-eslint/no-explicit-any': 0
+  },
+  globals: {
+    Liferay: false
   }
 }
